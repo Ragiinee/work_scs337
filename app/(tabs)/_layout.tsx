@@ -1,45 +1,70 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
+import { router } from "expo-router";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+const buttonLinlkpage = [
+  {
+    titleId: 1,
+    title: 'แบบผึก EP 02',
+    Page: '/ep02/layout'
+  }
+]
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
 
+export default function Index() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
-    </Tabs>
+    <View
+      style={{
+        flex: 1, justifyContent: "center", alignItems: "center",
+      }}
+    >
+      <Text style={styles.TextH1}>My work as SCS337 การพัฒนาแอปพลิเคชันบนอุปกรณ์เคลื่อนที่</Text>
+      <Text style={styles.TextH3}>Mr.Nopparat Muneeupatham 65222420005</Text>
+
+      {
+        buttonLinlkpage.map((item: any) =>
+        (
+          <TouchableOpacity
+            key={item.titleId}
+            style={styles.buttonColor}
+            onPress={() => router.push(item.Page)}
+          >
+            <Text style={{ color: "#fff", fontWeight: "bold", textAlign: 'center' }}>{item.title}</Text>
+          </TouchableOpacity>
+        ))
+      }
+    </View>
   );
 }
+
+export const styles = StyleSheet.create({
+  TextH1: {
+    display: 'flex',
+    justifyContent: "center",
+    alignItems: 'center',
+    padding: 20,
+    fontSize: 32,
+    color: '#78917d',
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+  TextH3: {
+    display: 'flex',
+    justifyContent: "center",
+    alignItems: 'center',
+    padding: 20,
+    fontSize: 24,
+    color: '#442315',
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+  buttonColor: {
+    padding: 16,
+    paddingHorizontal: 80,
+    margin: 12,
+    backgroundColor: '#db526b',
+    textAlign: 'center',
+    cursor: 'pointer',
+    borderRadius: 100,
+    width: 400
+  }
+});
