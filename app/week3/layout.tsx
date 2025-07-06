@@ -5,29 +5,12 @@ import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from '../(tabs)/_layout';
 
 const buttonLinkEx = [
-    { titleId: 1, title: 'Ex01 : Horizontal Stretch', Page: 'ep02/unit/ex01' },
-    { titleId: 2, title: 'Ex02 : Vertical Stretch', Page: 'ep02/unit/ex02' },
-    { titleId: 3, title: 'Ex03 : Horizontal Stacking Items', Page: 'ep02/unit/ex03' },
-    { titleId: 4, title: 'Ex04 : Vertical Stacking Items', Page: 'ep02/unit/ex04' },
-    { titleId: 5, title: 'Ex05 : Horizontal Center Stack', Page: 'ep02/unit/ex05' },
-    { titleId: 6, title: 'Ex06 : Vertical Center Stack', Page: 'ep02/unit/ex06' },
-    { titleId: 7, title: 'Ex07 : Bottom Align Vertical Stack', Page: 'ep02/unit/ex07' },
-    { titleId: 8, title: 'Ex08 : Space Between Horizontal', Page: 'ep02/unit/ex08' },
-    { titleId: 9, title: 'Ex09 : Space Between and Around', Page: 'ep02/unit/ex09' },
-    { titleId: 10, title: 'Ex10 : Fullscreen Flex', Page: 'ep02/unit/ex10' },
-    { titleId: 11, title: 'Ex11 : Flex Split', Page: 'ep02/unit/ex11' },
-    { titleId: 12, title: 'Ex12 : Flex Portion', Page: 'ep02/unit/ex12' },
+    { titleId: 1, title: 'test-components', Page: 'week3/components/test-components' },
+    { titleId: 2, title: 'test-greeting', Page: 'week3/components/test-greeting' },
 ];
 
-export const ColorUnit = {
-    color1: '#4fe3c1',
-    color2: '#4a91e3',
-    color3: '#8f13fd'
-}
-
-
-
-export default function ChoniceEx() {
+    
+export default function ChoniceEx3() {
     return (
         <>
             <View >

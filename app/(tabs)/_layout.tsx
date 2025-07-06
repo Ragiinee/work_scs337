@@ -6,6 +6,11 @@ const buttonLinlkpage = [
     titleId: 1,
     title: 'แบบผึก EP 02',
     Page: '/ep02/layout'
+  },
+  {
+    titleId: 2,
+    title: 'แบบผึก week3',
+    Page: '/week3/layout'
   }
 ]
 
@@ -60,11 +65,12 @@ export const styles = StyleSheet.create({
   buttonColor: {
     padding: 16,
     paddingHorizontal: 80,
+    marginVertical: 6,
     margin: 12,
     backgroundColor: '#db526b',
     textAlign: 'center',
     cursor: 'pointer',
     borderRadius: 100,
-    width: 400
+    width: 300
   }
 });
