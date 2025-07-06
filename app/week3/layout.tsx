@@ -2,11 +2,12 @@ import { router } from "expo-router";
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 
 //data link
-import { styles } from '../(tabs)/_layout';
+import { styles } from '../index';
 
 const buttonLinkEx = [
     { titleId: 1, title: 'test-components', Page: 'week3/components/test-components' },
     { titleId: 2, title: 'test-greeting', Page: 'week3/components/test-greeting' },
+    { titleId: 3, title: 'travel', Page: 'week3/components/travel' },
 ];
 
     

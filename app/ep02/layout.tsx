@@ -2,7 +2,7 @@ import { router } from "expo-router";
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 
 //data link
-import { styles } from '../(tabs)/_layout';
+import { styles } from '../index';
 
 const buttonLinkEx = [
     { titleId: 1, title: 'Ex01 : Horizontal Stretch', Page: 'ep02/unit/ex01' },
