@@ -9,6 +9,7 @@ const buttonLinkEx = [
     { titleId: 2, title: 'test-greeting', Page: 'week3/components/test-greeting' },
     { titleId: 3, title: 'travel', Page: 'week3/components/travel' },
     { titleId: 4, title: 'Resort', Page: 'week3/Quiz/resort' },
+    { titleId: 5, title: 'Review', Page: 'week3/Quiz/review' },
 ];
 
 
