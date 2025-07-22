@@ -8,9 +8,10 @@ const buttonLinkEx = [
     { titleId: 1, title: 'test-components', Page: 'week3/components/test-components' },
     { titleId: 2, title: 'test-greeting', Page: 'week3/components/test-greeting' },
     { titleId: 3, title: 'travel', Page: 'week3/components/travel' },
+    { titleId: 4, title: 'Resort', Page: 'week3/Quiz/resort' },
 ];
 
-    
+
 export default function ChoniceEx3() {
     return (
         <>
@@ -28,7 +29,7 @@ export default function ChoniceEx3() {
                             key={item.titleId}
                             style={
                                 {
-                                    flex: 1, justifyContent: "center", alignItems: "center", marginVertical:6
+                                    flex: 1, justifyContent: "center", alignItems: "center", marginVertical: 6
                                 }
                             }>
                             <TouchableOpacity
