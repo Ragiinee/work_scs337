@@ -14,15 +14,17 @@ export default function Section6() {
             </View>
 
             {/* Map image */}
-            <Image
-                source={require("@/assets/week3/map.jpg")}
-                style={{
-                    width: '100%',
-                    aspectRatio: 16 / 9,
-                    borderRadius: 8,
-                    resizeMode: 'cover',
-                }}
-            />
+            <View style={{ justifyContent: 'center' }}>
+                <Image
+                    source={require("@/assets/week3/map.jpg")}
+                    style={{
+                        width: '100%',
+                        aspectRatio:2,
+                        borderRadius: 8,
+                        resizeMode: 'cover',
+                    }}
+                />
+            </View>
         </View>
     );
 }

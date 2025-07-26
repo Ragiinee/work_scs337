@@ -1,7 +1,6 @@
 import { FontAwesome } from "@expo/vector-icons";
 import { Link } from "expo-router";
 import { Image, ScrollView, Text, View } from "react-native";
-import MyIcon from "../DTO/MyIcon";
 
 const reviewData = [
     {
@@ -38,7 +37,7 @@ export default function Review() {
             {/* Header */}
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
                 <Link href={'/week3/layout'}>
-                    <MyIcon title="" name="arrow-left" size={30} color="#e5654f" />
+                    <FontAwesome name="arrow-left" size={30} color="#e5654f" />
                 </Link>
 
                 <Text style={{ fontSize: 24, fontWeight: '400', color: 'black' }}>

@@ -10,6 +10,7 @@ export default function Section7() {
 
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 {/* Image box */}
+                {/* Image box */}
                 <View
                     style={{
                         borderRadius: 12,
@@ -17,11 +18,6 @@ export default function Section7() {
                         height: 120,
                         width: 120,
                         marginRight: 16,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 2 },
-                        shadowOpacity: 0.1,
-                        shadowRadius: 4,
-                        elevation: 3,
                         backgroundColor: '#fff',
                     }}
                 >
@@ -35,8 +31,9 @@ export default function Section7() {
                     />
                 </View>
 
+
                 {/* Text block */}
-                <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-between', alignItems:'flex-start',height:120 }}>
                     <Text style={{ fontSize: 20, fontWeight: '700', color: '#3b3b3b', marginBottom: 8 }}>
                         Standard Twin Room
                     </Text>

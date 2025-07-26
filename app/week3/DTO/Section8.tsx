@@ -30,11 +30,6 @@ export default function Section8() {
                     paddingVertical: 12,
                     paddingHorizontal: 24,
                     borderRadius: 8,
-                    shadowColor: '#000',
-                    shadowOffset: { width: 0, height: 2 },
-                    shadowOpacity: 0.1,
-                    shadowRadius: 4,
-                    elevation: 3,
                 }}
             >
                 <Text style={{ color: "#fff", fontWeight: "bold", fontSize: 16 }}>

@@ -6,7 +6,7 @@ import MyIcon from "./MyIcon";
 export default function Section2() {
     return (
         <View style={{ marginTop: -50, paddingBottom: 20, width: '100%' }}>
-            <View style={{ backgroundColor: '#f5f5f5', marginHorizontal: 20, borderRadius: 10, shadowRadius: 5, shadowOpacity: 0.3, padding: 20, height: 'auto' }}>
+            <View style={{ backgroundColor: '#f5f5f5', marginHorizontal: 20, borderRadius: 10, padding: 20, height: 'auto' }}>
 
                 {/* titer */}
                 <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16, textAlign: 'center', color: '#3b3b3b' }}>Hilton San Francisco</Text>

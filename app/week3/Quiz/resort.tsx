@@ -11,7 +11,7 @@ import Section8 from '../DTO/Section8';
 
 export default function Resort() {
     return (
-        <ScrollView style={{ flex: 1, backgroundColor: '#fff', paddingBottom: 24 }}>
+        <ScrollView style={{ flex: 1, backgroundColor: '#fff'}}>
             <Section1 />
             <Section2 />
             <Section3 />
