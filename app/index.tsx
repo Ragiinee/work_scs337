@@ -11,6 +11,11 @@ const buttonLinlkpage = [
     titleId: 2,
     title: 'แบบผึก week3',
     Page: '/week3/layout'
+  },
+  {
+    titleId: 3,
+    title: 'แบบผึก week5 Health App',
+    Page: '/week5/health'
   }
 ]
 
