@@ -1,8 +1,8 @@
 // Section1 Component 
 
 import { FontAwesome } from "@expo/vector-icons";
-import { router } from "expo-router";
-import { Image, Pressable, View } from "react-native";
+import { Link } from "expo-router";
+import { Image, View } from "react-native";
 import MyIcon from "./MyIcon";
 
 export default function Section1() {
@@ -10,9 +10,9 @@ export default function Section1() {
         <View style={{ position: 'relative' }}>
 
             <View style={{ position: 'absolute', flexDirection: "row", justifyContent: "space-between", zIndex: 1, width: "100%", padding: 24 }}>
-                <Pressable onPress={() => router.back()}>
-                    <FontAwesome  name="arrow-left" size={30} color="white" />
-                </Pressable>
+                <Link href={'/week3/layout'}>
+                    <FontAwesome name="arrow-left" size={30} color="white" />
+                </Link>
                 <View style={{ alignItems: "flex-end" }}>
                     <MyIcon title="" name="image" size={30} color="white" />
                 </View>
