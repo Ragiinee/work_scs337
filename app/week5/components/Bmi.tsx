@@ -28,7 +28,7 @@ export default function Bmi() {
     useEffect(() => {
         let Category = ''
         const bmi = Number(Bmi)
-        console.log(bmi);
+        // console.log(bmi);
 
         if (bmi > 0) {
             if (bmi < 18.5 ) {
